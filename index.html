@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brant Service - Autocentrs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    nav {
+      background: #1e90ff;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .services {
+      background-color: #111;
+    }
+    .contact {
+      background: #111;
+    }
+    footer {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li::before {
+      content: '✓';
+      margin-right: 8px;
+      color: red;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Brant Service Logo" />
+    <h1>Brant Service</h1>
+    <p>Jūsu uzticamais autoremonta partneris</p>
+  </header>
+
+  <nav>
+    <a href="#services">Pakalpojumi</a>
+    <a href="#about">Par mums</a>
+    <a href="#contact">Kontakti</a>
+  </nav>
+
+  <section id="services" class="services">
+    <h2>Mūsu Pakalpojumi</h2>
+    <ul>
+      <li>Diagnostika</li>
+      <li>Motora remonts</li>
+      <li>Šasijas remonts</li>
+      <li>Eļļas maiņa</li>
+      <li>Šīnu montāža un balansēšana</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>Par Brant Service</h2>
+    <p>Mēs esam pieredzējuša komanda ar mērķi sniegt augstākās kvalitātes autoremonta pakalpojumus Rēzeknes novadā. Mūsu galvenās vērtības ir uzticamība, kvalitāte un ātrs serviss.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Sazinieties ar mums</h2>
+    <p><strong>Adrese:</strong> Dzintars dārzs 150, Pleikšņi, Ozolaines pagasts, Rēzeknes novads, LV-4601</p>
+    
+    <p><strong>Tālrunis:</strong> <a href="tel:+37122480584" style="color:#1e90ff;">+371 22 480 584</a></p>
+    <p><a href="https://wa.me/37122480584" target="_blank" style="display:inline-block;padding:10px 20px;background-color:#25D366;color:#fff;border-radius:5px;text-decoration:none;">Rakstīt WhatsApp</a></p>
+    
+    <p><strong>E-pasts:</strong> info@brantservice.lv</p>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Vārds:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Ziņa:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Nosūtīt</button>
+    </form>
+  </section>
+
+<section id="map" class="map" style="padding:40px 20px;">
+  <h2>Atrašanās vieta</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2236.1985734939985!2d27.3638728!3d56.4908028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e93c2489f4b93d%3A0xd4d8b3a6c1e4ea1!2sDzintars%20d%C4%81rzs%20150%2C%20Pleik%C5%A1%C5%86i%2C%20Ozolaines%20pagasts%2C%20LV-4601!5e0!3m2!1slv!2slv!4v1712255900000!5m2!1slv!2slv" 
+    width="100%" height="350" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+  <footer>
+    &copy; 2025 Brant Service. Visas tiesības aizsargātas.
+  </footer>
+</body>
+</html>
